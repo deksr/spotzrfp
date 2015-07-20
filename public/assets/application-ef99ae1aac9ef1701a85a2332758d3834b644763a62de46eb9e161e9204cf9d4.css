@@ -1,0 +1,909 @@
+/**** Transitions ****/
+
+
+.transitions-enabled.masonry,
+.transitions-enabled.masonry .masonry-brick {
+  -webkit-transition-duration: 0.7s;
+     -moz-transition-duration: 0.7s;
+      -ms-transition-duration: 0.7s;
+       -o-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+}
+
+.transitions-enabled.masonry {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.transitions-enabled.masonry  .masonry-brick {
+  -webkit-transition-property: left, right, top;
+     -moz-transition-property: left, right, top;
+      -ms-transition-property: left, right, top;
+       -o-transition-property: left, right, top;
+          transition-property: left, right, top;
+}
+
+
+/* disable transitions on container */
+.transitions-enabled.infinite-scroll.masonry {
+  -webkit-transition-property: none;
+     -moz-transition-property: none;
+      -ms-transition-property: none;
+       -o-transition-property: none;
+          transition-property: none;
+}
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom.
+ */
+/* line 9, /Users/DevathaK/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 19, /Users/DevathaK/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 33, /Users/DevathaK/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 54, /Users/DevathaK/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 67, /Users/DevathaK/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
+ */
+/* line 77, /Users/DevathaK/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 89, /Users/DevathaK/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability of focused elements when they are also in an
+ * active/hover state.
+ */
+/* line 98, /Users/DevathaK/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 110, /Users/DevathaK/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 118, /Users/DevathaK/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 127, /Users/DevathaK/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 136, /Users/DevathaK/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 145, /Users/DevathaK/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 154, /Users/DevathaK/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 162, /Users/DevathaK/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 170, /Users/DevathaK/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+sup {
+  top: -0.5em;
+}
+
+/* line 174, /Users/DevathaK/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 185, /Users/DevathaK/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 193, /Users/DevathaK/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 204, /Users/DevathaK/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 212, /Users/DevathaK/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 221, /Users/DevathaK/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 229, /Users/DevathaK/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 252, /Users/DevathaK/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 266, /Users/DevathaK/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 277, /Users/DevathaK/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 290, /Users/DevathaK/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 302, /Users/DevathaK/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 311, /Users/DevathaK/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 322, /Users/DevathaK/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 334, /Users/DevathaK/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 346, /Users/DevathaK/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
+ */
+/* line 356, /Users/DevathaK/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  box-sizing: content-box;
+  /* 2 */
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 367, /Users/DevathaK/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 376, /Users/DevathaK/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 387, /Users/DevathaK/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 396, /Users/DevathaK/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 405, /Users/DevathaK/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 416, /Users/DevathaK/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 421, /Users/DevathaK/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/normalize-rails-3.0.3/vendor/assets/stylesheets/normalize-rails/normalize.css */
+td,
+th {
+  padding: 0;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+
+
+ */
+
+
+
+@import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow);
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+
+/*start nav bar*/ 
+
+#pins{
+  margin: 0 auto;
+}
+
+
+*{
+ 	margin: 0;
+ 	padding: 0;
+	font-family:'PT Sans Narrow', sans-serif;
+ }
+
+
+ .sometext{
+color: grey;
+font-family:'Oswald', sans-serif;
+font-size: 20px;
+text-align: center;
+line-height: 30px;
+margin-top: 115px;
+
+ }
+
+ .yesspotted{
+  color:grey;
+  margin: 0px auto;
+  width: 1000px;
+  font-size: 200px;
+  margin-top: 140px;
+  position:relative;
+  margin-left:90px;
+
+ }
+
+
+
+.homepage{
+ 	width: 100%;
+ 	height: 10px;
+/*background-color: #F5F5F5;
+*//*	background-color:#ACB8B6;*/
+/*background-color:#001E3C;*/
+background-color:#525F72;
+ 	-webkit-box-shadow: 1px 2px 7px 0px rgba(232,229,232,1);
+-moz-box-shadow: 1px 2px 7px 0px rgba(232,229,232,1);
+box-shadow: 1px 2px 7px 0px rgba(232,229,232,1); 
+ 	
+ }
+
+ a{
+ 	text-decoration: none;
+ }
+
+ .pagenav, a{
+ 	line-height: 10px;
+ 	color: white;
+ 	padding: 0 20px 0 20px;
+  
+/* 	text-decoration: none;
+*/ }
+
+ .pagenav{
+ 	margin: 0 0 0 5%;
+	float: left;
+
+ }
+
+.signin{
+	float: right;
+/*	margin: 0 5% 0 0;*/
+  top:40px;
+/*  width: 600px;
+*/  left: 1100px;
+  margin: 0px auto;
+  position: absolute;
+
+
+}
+
+.mainwrap{
+	width: 90%;
+/*	float:left;
+*/	margin: 20px;
+}
+/*end=navbar
+*/
+
+
+/*start-navbarlogo
+*/
+.logo {
+	color:#D2F0E8;
+	font-size: 30px;
+	text-decoration: none ;
+  margin-top: 30px;
+  line-height: 10px;
+  color: black;
+  padding: 0 20px 0 20px;
+  font-size: 14px;
+
+
+}
+/*end-navbarlogo*/
+
+
+
+
+
+/*START- views/devise/sessions/new
+*/
+.loginform{
+	width: 270px;
+  background: white;
+  opacity: 0.8;
+  padding: 50px 50px 50px 30px;
+  margin: auto;
+  display: block;
+  position: relative;
+
+}
+
+
+
+.namepasswordbox{
+
+border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid #E2EFE6;
+  padding: 10px;
+  background: white;
+  text-align: center;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  width: 250px;
+  
+  &:focus {
+    border: 3px solid #E2EFE6;
+  }
+}
+
+
+
+.button {
+  width: 100%;
+  background: #E2EFE6;
+  padding: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  display: block;
+  width: 260px;
+  border:0;
+  
+  &:hover {
+    background: rgb(255, 100, 0);
+  }
+}
+/*END- views/devise/sessions/new
+*/
+
+
+/*START- views/comments/_comment */
+
+.usercomments{
+		background-color: #E2EFE6;
+  	position: relative;
+  left:5%; 
+  top:70px;
+  padding: 30px;
+  width:700px;
+  margin-top: 20px;
+  -webkit-box-shadow: 1px 2px 7px 0px rgba(232,229,232,1);
+-moz-box-shadow: 1px 2px 7px 0px rgba(232,229,232,1);
+box-shadow: 1px 2px 7px 0px rgba(232,229,232,1);
+border-radius: 12px;
+font-family:'Oswald', sans-serif;
+
+
+}
+
+/*END- views/comments/_comment*/
+
+/*START- views/item/new*/
+.submitanitem{
+		background-color: #2F3237;
+		position:fixed;
+		left:30%;
+		padding:50px;
+    top:140px;
+border-radius: 20px;
+z-index: 11;
+-webkit-box-shadow: 1px 14px 41px 6px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 14px 41px 6px rgba(0,0,0,0.75);
+box-shadow: 1px 14px 41px 6px rgba(0,0,0,0.75);
+color:grey;
+line-height: 30px;
+}
+
+/*END- views/item/new*/
+
+.buttonforyesspotted{
+  width: 100%;
+  background: #E2EFE6;
+  padding: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  display: block;
+  width: 120px;
+  border:0;
+  margin-left: 1020px;
+  border-radius: 350px;
+  margin-top: 25px;
+
+  
+  &:hover {
+    background: rgb(255, 100, 0);
+  }
+}
+
+
+@media (max-width: 640px)
+
+
+
+
+
+/* line 6, /Users/DevathaK/Desktop/shopping/ifound-final-heroku/app/assets/stylesheets/items.scss */
+#pins {
+  margin: 0 auto;
+}
+
+/* line 10, /Users/DevathaK/Desktop/shopping/ifound-final-heroku/app/assets/stylesheets/items.scss */
+.box {
+  margin: 10px;
+  width: 100px;
+  background-color: #F5F5F5;
+  padding: 20px;
+  border-radius: 4px;
+  -webkit-box-shadow: 1px 2px 7px 0px #e8e5e8;
+  -moz-box-shadow: 1px 2px 7px 0px #e8e5e8;
+  box-shadow: 1px 2px 7px 0px #e8e5e8;
+}
+
+/* line 21, /Users/DevathaK/Desktop/shopping/ifound-final-heroku/app/assets/stylesheets/items.scss */
+.box img {
+  width: 100%;
+}
+
+/* line 25, /Users/DevathaK/Desktop/shopping/ifound-final-heroku/app/assets/stylesheets/items.scss */
+.mapmove {
+  position: relative;
+  margin-left: 60px;
+  margin-top: 120px;
+}
+
+/* line 31, /Users/DevathaK/Desktop/shopping/ifound-final-heroku/app/assets/stylesheets/items.scss */
+.lostandfoundheading {
+  color: green;
+}
+
+/* line 35, /Users/DevathaK/Desktop/shopping/ifound-final-heroku/app/assets/stylesheets/items.scss */
+.movablecontent {
+  position: relative;
+  margin: auto;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 30px;
+  text-align: left;
+}
+
+/* line 46, /Users/DevathaK/Desktop/shopping/ifound-final-heroku/app/assets/stylesheets/items.scss */
+.postedby {
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+/* line 53, /Users/DevathaK/Desktop/shopping/ifound-final-heroku/app/assets/stylesheets/items.scss */
+#showwrapper {
+  background-color: #E2EFE6;
+  padding: 30px;
+  position: fixed;
+  border-radius: 4px;
+  left: 65%;
+  top: 100px;
+  -webkit-box-shadow: 1px 2px 7px 0px #e8e5e8;
+  -moz-box-shadow: 1px 2px 7px 0px #e8e5e8;
+  box-shadow: 1px 2px 7px 0px #e8e5e8;
+}
+
+/* line 64, /Users/DevathaK/Desktop/shopping/ifound-final-heroku/app/assets/stylesheets/items.scss */
+.askquestion {
+  background-color: #E2EFE6;
+  position: fixed;
+  left: 5%;
+  padding: 30px;
+  top: 480px;
+  -webkit-box-shadow: 1px 2px 7px 0px #e8e5e8;
+  -moz-box-shadow: 1px 2px 7px 0px #e8e5e8;
+  box-shadow: 1px 2px 7px 0px #e8e5e8;
+  border-radius: 8px;
+}
+
+/* line 77, /Users/DevathaK/Desktop/shopping/ifound-final-heroku/app/assets/stylesheets/items.scss */
+.commentboxarea {
+  padding: 10px;
+  width: 600px;
+  -webkit-box-shadow: 1px 2px 7px 0px #e8e5e8;
+  -moz-box-shadow: 1px 2px 7px 0px #e8e5e8;
+  box-shadow: 1px 2px 7px 0px #e8e5e8;
+  border: none;
+  margin-top: 10px;
+}
+
+/* line 87, /Users/DevathaK/Desktop/shopping/ifound-final-heroku/app/assets/stylesheets/items.scss */
+.askquestionbutton {
+  margin-top: 50px;
+}
+
+/* line 92, /Users/DevathaK/Desktop/shopping/ifound-final-heroku/app/assets/stylesheets/items.scss */
+.submitbutton {
+  margin-left: 100px;
+}
+
+/* line 96, /Users/DevathaK/Desktop/shopping/ifound-final-heroku/app/assets/stylesheets/items.scss */
+.nuwrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+/* line 1, /Users/DevathaK/Desktop/shopping/ifound-final-heroku/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 9, /Users/DevathaK/Desktop/shopping/ifound-final-heroku/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 15, /Users/DevathaK/Desktop/shopping/ifound-final-heroku/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 21, /Users/DevathaK/Desktop/shopping/ifound-final-heroku/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 24, /Users/DevathaK/Desktop/shopping/ifound-final-heroku/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 28, /Users/DevathaK/Desktop/shopping/ifound-final-heroku/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 35, /Users/DevathaK/Desktop/shopping/ifound-final-heroku/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 40, /Users/DevathaK/Desktop/shopping/ifound-final-heroku/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 44, /Users/DevathaK/Desktop/shopping/ifound-final-heroku/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 50, /Users/DevathaK/Desktop/shopping/ifound-final-heroku/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 58, /Users/DevathaK/Desktop/shopping/ifound-final-heroku/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 69, /Users/DevathaK/Desktop/shopping/ifound-final-heroku/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}

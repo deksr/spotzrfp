@@ -1,0 +1,41 @@
+<div class="transparent">
+
+<p class ="startpartial"> start- forms/_form.html.erb </p>
+<%= form_for(@item) do |f| %>
+  <% if @item.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@item.errors.count, "error") %> prohibited this item from being saved:</h2>
+
+      <ul>
+      <% @item.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+   <div class="field"> <br>
+        <%= f.label :image %><br>
+        <%= f.file_field :image %>
+    </div>
+
+  <div class="field">
+    <%= f.label :itemname %><br>
+    <%= f.text_field :itemname %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br>
+    <%= f.text_field :address %>
+  </div>
+  
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Spotzr</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
+  <script src="//maps.google.com/maps/api/js?v=3.13&amp;sensor=false&amp;libraries=geometry" type="text/javascript"></script>
+  <script src='//google-maps-utility-library-v3.googlecode.com/svn/tags/markerclustererplus/2.0.14/src/markerclusterer_packed.js' type='text/javascript'></script>
+
+  <%= csrf_meta_tags %>
+
+</head>
+<body>
+
+<div class="homepage">
+  <div class="pagenav">
+     <%= link_to items_path do %>
+    <h3 class= "logo"> Back </h3> 
+ <% end %>
+  </div>
+
+
+
+  <div class="signin">
+	<% if user_signed_in? %>
+  <%= link_to "Sign out", destroy_user_session_path, method: :delete %> |
+  <%= link_to "Profile", edit_user_registration_path %>
+  <%#= link_to "submit item", new_item_path %>
+
+    <%else %>
+
+  <%= link_to "Sign in", new_user_session_path %>|
+	<%= link_to "Sign up", new_user_registration_path %> 
+
+  <% end %>
+
+    </div>
+</div>
+
+<div class="mainwrap">
+<p class="notice"><%#= notice %></p>
+<p class="alert"><%#= alert %></p>
+</div>
+
+
+  
+<%= yield %>
+
+</body>
+</html>

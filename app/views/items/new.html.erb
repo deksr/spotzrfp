@@ -1,0 +1,51 @@
+
+<%# render 'form' %>
+<div class ="nuwrapper"> </div>
+
+<h1 class= "yesspotted"> Yes! Spotted! </h1>
+<%= link_to "submit item", new_item_path, :class => "buttonforyesspotted" %> 
+
+<div class ="mapmove">
+  <div style='width: 800px;'>
+    <div id="map" style='width: 1150px; height: 500px;'></div>
+  </div>
+</div>
+
+<div class ="submitanitem">
+  <h2>Found a lost item? Upload an image and press submit.</h2>
+  <%= form_for @item, html: { multipart: true } do |f| %>
+
+  <div> Item image<br/>
+    <%= f.file_field :image %>
+  </div>
+
+  <div>Item Name<br />
+    <%= f.text_field :itemname, autofocus: :true %></div>
+
+  <div> Description <br />
+    <%= f.text_field :description, autofocus: :true %></div>
+
+  <div>City, State<br/>
+    <%= f.text_field :address %></div>
+
+  <div>Date found<br/>
+    <%= f.date_select :foundate, :start_year=>2001 %>
+  </div>
+       
+  <div><%= f.submit "Add this item" %></div>
+    <% end %>
+    <%= link_to 'Back', items_path %>
+
+      
+
+</div>
+
+<script type="text/javascript">
+  handler = Gmaps.build('Google');
+  handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
+    markers = handler.addMarkers(<%=raw @hash.to_json %>);
+    handler.bounds.extendWith(markers);
+    handler.fitMapToBounds();
+  });
+</script>
+

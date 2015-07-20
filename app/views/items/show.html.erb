@@ -1,0 +1,44 @@
+
+
+
+<p id="notice"><%#= notice %></p>
+
+<div id ="showwrapper"> 
+
+	<div class ="showwrapperprimary"> 
+	<p> <%= image_tag @item.image.url(:medium)%> </p>
+	</div>
+
+	<div class ="showwrapperprimary">
+		<p> <strong>Itemname:</strong> <%= @item.itemname %> </p>
+		<p> <strong>Description:</strong> <%= @item.description %></p>
+		<p><strong>Address:</strong><%= @item.address %></p>
+		<p><strong>date found:</strong> <%= @item.foundate %></p>
+		<p><strong>By: <%= @item.user.name%> </strong></p>
+
+
+		<%= link_to 'Back', items_path %> |
+
+		<%if @item.user == current_user %>
+		<%= link_to 'Edit', edit_item_path(@item) %> 
+		<% end %>
+	</div>
+
+	<br> <br> <br>
+
+</div>
+
+<%= render :partial  => @item.comments %>
+
+<br> <br> <br>
+
+<div class= "askquestion"> 
+	<p> Have a question? Ask. </p>
+	<%= simple_form_for [@item, Comment.new] do |f| %>
+	<%= f.text_area :body,:class => "commentboxarea" %>
+	<%= f.submit "add comment" , :class => "askquestionbutton"%>
+	<% end %>
+
+</div>
+
+
