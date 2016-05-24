@@ -4,7 +4,7 @@
 ####Spotzr is an app that lets user post any lost item they found anywhere in the city.  Features include geo-tagging, uploading pictures and comments.
 
 View this app here for live demo:
-https://spotzr.herokuapp.com/users/sign_in
+https://spot-zer.herokuapp.com/items
 
 Technologies used:
 Ruby On Rails, Javascript, CSS, HTML
