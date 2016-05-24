@@ -1,7 +1,7 @@
 # spotzrfp
 
 
-####Spotzr is an app that lets user post any lost item they found anywhere in the city.  Features include geo-tagging, uploading pictures and comments.
+####Spotzr is an app that lets user post any lost item they found anywhere in the city.  Features include geo-tagging and comments.
 
 View this app here for live demo:
 https://spot-zer.herokuapp.com/items
